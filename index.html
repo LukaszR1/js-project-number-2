@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container main-container" id="container main-container">
+      <div class="currency-container" id="currency-container">
+        <div class="logo"></div>
+        <h1>KALKULATOR WALUT</h1>
+
+        <input
+          type="number"
+          class="currencies-input"
+          id="currencies-input"
+          placeholder="Wpisz kwotę"
+        />
+
+        <select
+          class="form-select"
+          id="select-currencies"
+          aria-label="Default select example"
+        >
+          <option selected>Wybierz walutę</option>
+          <option value="EUR">EUR</option>
+          <option value="USD">USD</option>
+          <option value="CHF">CHF</option>
+        </select>
+        <button class="currency-button" id="currency-button">Przelicz</button>
+        <div class="container-error">
+          <p class="error-message" id="error-message"></p>
+        </div>
+        <div id="loader" class="loader"></div>
+        <div class="currency-converter" id="currency-converter">
+          <span class="calculate-result" id="calculate-result"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
